@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:Ejercicio_Tarea"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="0,0,-8,-21">
+        <StackPanel>
+            <Label Content="Lado 1"/>
+            <TextBox Width="100" Height="23" Text="{Binding Path=PrimerNumero, Mode=TwoWay}" Margin="350,0" />
+            <Label Content="Lado 2"/>
+            <TextBox Width="100" Height="23" Text="{Binding Path=SegundoNumero, Mode=TwoWay}" Margin="350,0" />
+            <Label Content="El Area es: " />
+            <TextBox Width="100" Height="23" Text="{Binding Path=Resultado, Mode=TwoWay}" Margin="350,0" />
+            <Label Content="El perimetro es: " />
+            <TextBox Width="100" Height="23" Text="{Binding Path=Resultado, Mode=TwoWay}" Margin="350,0" />
+
+
+        </StackPanel>
+
+
+
     </Grid>
 </Window>

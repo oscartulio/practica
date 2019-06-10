@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+
 namespace Ejercicio_Tarea
 {
-    class rectangulo:  INotifyPropertyChanged
+    class rectangulo: INotifyPropertyChanged
     {
 
         private string primerNumero;
@@ -43,7 +44,7 @@ namespace Ejercicio_Tarea
         {
             get
             {
-                int resultado = int.Parse(PrimerNumero) + int.Parse(SegundoNumero);
+                int resultado = int.Parse(PrimerNumero) * int.Parse(SegundoNumero);
                 return resultado.ToString();
             }
             set
@@ -53,6 +54,7 @@ namespace Ejercicio_Tarea
                 OnPropertyChanged("Resultado");
             }
         }
+      
         public string Resultado2
         {
             get
@@ -67,6 +69,8 @@ namespace Ejercicio_Tarea
                 OnPropertyChanged("Resultado");
             }
         }
+
+    
         public event PropertyChangedEventHandler PropertyChanged;
 
         // Métodos
@@ -76,8 +80,9 @@ namespace Ejercicio_Tarea
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
     }
+   
+    
+
+    }
 
 
-
-}
-}

@@ -24,5 +24,10 @@ namespace Ejercicio_Tarea
         {
             InitializeComponent();
         }
+
+        private void click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

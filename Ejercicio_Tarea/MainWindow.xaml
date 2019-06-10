@@ -13,7 +13,7 @@
             <Label Content="Lado 2"/>
             <TextBox Width="100" Height="23" Text="{Binding Path=SegundoNumero, Mode=TwoWay}" Margin="350,0" />
             <Label Content="El Area es: " />
-            <TextBox Width="100" Height="23" Text="{Binding Path=Resultado, Mode=TwoWay}" Margin="350,0" />
+            <TextBox Width="100" Height="22" Text="{Binding Path=Resultado, Mode=TwoWay}" Margin="350,0" />
             <Label Content="El perimetro es: " />
             <TextBox Width="100" Height="23" Text="{Binding Path=Resultado, Mode=TwoWay}" Margin="350,0" />
 
